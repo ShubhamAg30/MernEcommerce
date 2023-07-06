@@ -265,7 +265,7 @@ const MaterialAppBar = ({ history }) => {
           </a>
           <a href='/' style={{ color: '#ffffff', textDecoration: 'none' }}>
             <Typography className={classes.title} variant='h6' noWrap>
-              BRAND
+              SmartCart
             </Typography>
           </a>
 
