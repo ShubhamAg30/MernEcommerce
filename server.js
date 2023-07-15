@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const cors = require('cors');
+
 const path = require('path');
 const expressValidator = require('express-validator');
 require('dotenv').config();
@@ -17,6 +17,10 @@ const orderRoutes = require('./routes/order');
 
 // app
 const app = express();
+const cors = require('cors');
+app.use(cors({
+    origin: ['https://smartcart1.onrender.com', 'https://https://smartcart-server.onrender.com']
+}));
 
 // db connection
 const connectDB = async () => {
